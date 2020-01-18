@@ -5,11 +5,13 @@ import configureStore from "./store";
 import "./index.css";
 import App from "./App";
 import Dashboard from "./components/dashboard/Dashboard";
+import SignIn from "./components/signIn";
+import SignUp from "./components/signUp";
 import registerServiceWorker from "./registerServiceWorker";
 
 ReactDOM.render(
   <Provider store={configureStore()}>
-    <Dashboard />
+    <SignUp />
   </Provider>,
   document.getElementById("root")
 );
